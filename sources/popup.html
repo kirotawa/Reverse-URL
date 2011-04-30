@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Reverse url</title>
+  	<script type="text/javascript">
+
+  	    function getReverse()
+
+  	    {
+
+  	        // Get Text1 value
+		var i;
+  	        var rev_url = "";
+		var url= document.getElementById("Text1").value ;
+		var pos = url.search("url=");
+		if( pos == -1){
+			alert("put a correct url to reverse");
+			return 0;
+		}
+		url = url.substring(url.search("url=") + 4,url.length);
+		
+  	        for(i = url.length-1; i>=0; i--){
+			rev_url += url.charAt(i);
+		}
+  	        
+	        window.open(rev_url);
+
+  	    }
+
+  	</script>
+
+
+
+</head>
+
+<body>
+
+    <input id="Text1" type="text" style="width: 170px" value="put url here"/> 
+
+    <input id="Button1" type="button" value="Open" onclick="getReverse()" />
+
+    <br /><br />
+
+     
+</body>
+
+</html>

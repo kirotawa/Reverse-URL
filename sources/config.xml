@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="reverse-url">
+	<name>Reverse URL</name>
+	<description>  Many sites put links to download in reverse way, forcing the navigator to fill a register enterily . With this extension you can put the url normal way again, no more register unnecessary.</description>
+	<author href="https://github.com/kirotawa" email="kirotawa@gmail.com">Leônidas .S Barbosa (kirotawa@gmail.com)</author>
+	<icon src="icon.png"/>
+</widget>
