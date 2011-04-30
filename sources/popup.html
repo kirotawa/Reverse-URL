@@ -5,7 +5,16 @@
 
 <title>Reverse url</title>
   	<script type="text/javascript">
-
+		
+	    function Validate(url) { 
+    			var v = new RegExp(); 
+    			v.compile("^[A-Za-z]+://[A-Za-z0-9-_]+\\.[A-Za-z0-9-_%&\?\/.=]+$"); 
+    			if (!v.test(url)) { 
+        			alert("You must supply a valid URL."); 
+        			return false; 
+    			}
+			else { return true; }  
+	    }		 
   	    function getReverse()
 
   	    {
@@ -24,10 +33,11 @@
   	        for(i = url.length-1; i>=0; i--){
 			rev_url += url.charAt(i);
 		}
-  	        
-	        window.open(rev_url);
-
-  	    }
+  	    	if( Validate(rev_url)) {
+			window.open(rev_url);
+		}  
+	   
+  	  }
 
   	</script>
 
